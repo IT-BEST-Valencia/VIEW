@@ -4,39 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_LBG_Valencia.png" type="image/png" />
     <title>BEST Valencia</title>
+    
 </head>
-<body>
-    <h1>PROBANDO</h1>
-    <div>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav"> 
-          <div class="navbar-collapse collapse show" id="navbarResponsive" style="">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./view.html">VIEW</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./inscripcion.html">Inscripción</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./programa.hmtl">programa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./partners.html">partners</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="./faq.html">faq</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+<body>  
+  
+  <nav id="Barra navegación">
+    <img src="logo_LBG_Valencia.png" alt="Logo LBG Valencia" width="30%">
+    <a href="navbar.html">Home</a>
+    <a href="navbar.html">Schedule</a>
+    <a href="navbar.html">Survival Guide</a>
+    <a href="navbar.html">Organisers</a>
+  </nav>
+
+  <div>
+    <div> Título del curso</div>
+    <div>Lugar del curso y fecha</div>
+  </div>
+  <div id="Cuenta atrás"> 
+  <script>
+    // Establecer la fecha objetivo
+var countDownDate = new Date("May 4, 2023 00:00:00").getTime();
+
+// Actualizar la cuenta regresiva cada segundo
+var x = setInterval(function() {
+
+  // Obtener la hora actual
+  var now = new Date().getTime();
+    
+  // Calcular la diferencia entre la hora actual y la hora objetivo
+  var distance = countDownDate - now;
+    
+  // Calcular días, horas, minutos y segundos restantes
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Mostrar la cuenta regresiva en el elemento HTML
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+  // Si la cuenta regresiva ha terminado, mostrar un mensaje
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "La cuenta regresiva ha terminado!";
+  }
+}, 1000);
+  </script>
+</div>
+<div>
+  Texto de explicación del curso +  info.
+</div>
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/yNQh6aFtVFk?list=PLT6gQ1tQWvJjwhH6hvtjfAm1aKt9Z2qFr" title="HOLA OTRA VEZ!! | #APOCALIPSISMINECRAFT3 | EPISODIO 1 | WILLYREX Y VEGETTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 </body>
 </html>
