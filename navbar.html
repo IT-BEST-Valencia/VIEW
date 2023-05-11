@@ -6,58 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo_LBG_Valencia.png" type="image/png" />
     <title>BEST Valencia</title>
+    <link rel="stylesheet" href="Estilo_plantilla.css">
     
 </head>
 <body>  
-  
-  <nav id="Barra navegación">
-    <img src="logo_LBG_Valencia.png" alt="Logo LBG Valencia" width="30%">
-    <a href="navbar.html">Home</a>
-    <a href="navbar.html">Schedule</a>
-    <a href="navbar.html">Survival Guide</a>
-    <a href="navbar.html">Organisers</a>
-  </nav>
+  <img id="icono_de_Best" src="logo_LBG_Valencia.png" alt="Logo LBG Valencia" width="20%">
 
-  <div>
-    <div> Título del curso</div>
-    <div>Lugar del curso y fecha</div>
+  
+  <nav id="Barra_navegación">
+    <a class="link_barra" href="navbar.html">Home</a>
+    <a class="link_barra" href="navbar.html">Schedule</a>
+    <a class="link_barra" href="navbar.html">Survival Guide</a>
+    <a class="link_barra" href="navbar.html">Organisers</a>
+  </nav>
+  
+  <div class="Títulos">
+    <h2>Título del curso</h2>
+    <h2>Lugar del curso y fecha</h2>
   </div>
-  <div id="Cuenta atrás"> 
+  
+  <div id="countdown"></div>
+  
+  
+  <div>
+  
   <script>
     // Establecer la fecha objetivo
-var countDownDate = new Date("May 4, 2023 00:00:00").getTime();
+    var countDownDate = new Date("May 22, 2023 00:00:00").getTime();
 
-// Actualizar la cuenta regresiva cada segundo
-var x = setInterval(function() {
+    // Actualizar la cuenta regresiva cada segundo
+    var x = setInterval(function() {
 
-  // Obtener la hora actual
-  var now = new Date().getTime();
-    
-  // Calcular la diferencia entre la hora actual y la hora objetivo
-  var distance = countDownDate - now;
-    
-  // Calcular días, horas, minutos y segundos restantes
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Mostrar la cuenta regresiva en el elemento HTML
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-  // Si la cuenta regresiva ha terminado, mostrar un mensaje
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "La cuenta regresiva ha terminado!";
-  }
-}, 1000);
-  </script>
-</div>
-<div>
-  Texto de explicación del curso +  info.
+      // Obtener la hora actual
+      var now = new Date().getTime();
+        
+      // Calcular la diferencia entre la hora actual y la hora objetivo
+      var distance = countDownDate - now;
+        
+      // Calcular días, horas, minutos y segundos restantes
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Mostrar la cuenta regresiva en el elemento HTML
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        
+      // Si la cuenta regresiva ha terminado, mostrar un mensaje
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "La cuenta regresiva ha terminado!";
+      }
+    }, 1000);
+  </script></div>
 </div>
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/yNQh6aFtVFk?list=PLT6gQ1tQWvJjwhH6hvtjfAm1aKt9Z2qFr" title="HOLA OTRA VEZ!! | #APOCALIPSISMINECRAFT3 | EPISODIO 1 | WILLYREX Y VEGETTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div id="info_del_curso"><center>
+  <p>Explicación del curso +  info.</p> 
+</center>
+</div>
+
+<center>
+  <div id="video_promocional_del_curso" style="margin-top: 30px;">
+<iframe  width="800px" height=500px" src="https://www.youtube.com/embed/yNQh6aFtVFk?list=PLT6gQ1tQWvJjwhH6hvtjfAm1aKt9Z2qFr" title="HOLA OTRA VEZ!! | #APOCALIPSISMINECRAFT3 | EPISODIO 1 | WILLYREX Y VEGETTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center></div>
 
 </body>
 </html>
