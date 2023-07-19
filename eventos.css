@@ -1,0 +1,49 @@
+body {
+    margin: 20px; /* Aplica márgenes a todo el cuerpo de la página */
+    padding: 0; /* Elimina cualquier relleno interno */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+  }
+  
+  @media screen and (max-width: 990px) {
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .Barra_nav {
+    background: linear-gradient(to left, #763488, #ac2b83);
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+#view_blanco{
+    margin-right: 40px;
+    margin-left: 10px
+}
+
+
+  
+  ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    align-items:center;
+
+  }
+  
+  .link_barra {
+    text-decoration: none;
+    color: white;
+    margin-right: 200;
+    font-size: larger;
+    width: 100%;
+  }
+
+  #ultimobarra{
+    margin-right: 10px;
+  }
+ 
+  
