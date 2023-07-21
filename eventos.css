@@ -11,10 +11,11 @@ body {
       align-items: center;
     }
   }
+  
   .Barra_nav {
-    background: linear-gradient(to left, #763488, #ac2b83);
+    background: linear-gradient(to right, hsl(294, 68%, 69%), #76087a);
     display: flex;
-    padding: 10px 20px;
+    padding: 15px 20px;
     align-items: center;
   }
 
@@ -23,7 +24,9 @@ body {
     margin-left: 10px
 }
 
-
+.logos{
+    align-items: center;
+}
   
   ul {
     list-style: none;
@@ -37,13 +40,7 @@ body {
   .link_barra {
     text-decoration: none;
     color: white;
-    margin-right: 200;
+    margin-right: 50;
     font-size: larger;
     width: 100%;
   }
-
-  #ultimobarra{
-    margin-right: 10px;
-  }
- 
-  
