@@ -1,0 +1,96 @@
+:root{
+    --color-principal: #76087a67;
+    --color-secundario: blue;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Opcional, para ocultar barras de desplazamiento */
+  }
+
+.barra_principio{
+    background-image: url(https://bestvalencia.org/images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+}
+  
+.transparencia_foto_principio{
+    background-color: var(--color-principal);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50;
+}
+
+
+.logo_pequeño{
+    margin: 30 50;
+}
+
+.logo_pequeño img{width:200;}
+
+.lista_barra{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+
+.lista_barra p{
+    margin-top: 30;
+    margin-right: 80;
+    color:white;
+    font-style: italic;
+    white-space: nowrap;
+    font-size: 20;
+
+
+}
+
+.logo_central{
+    display: flex;
+    justify-content:center; /* Centrar horizontalmente */
+    align-items: center; 
+    
+}
+.logo_central img {
+    margin-left: 30;
+    width: 20%;
+    display: flex;
+}
+
+.logo_central p{
+    color: white;
+    text-align: center;
+    font-size: 55;
+    font-family: 'Segoe UI';
+    font-weight: 100;
+}
+
+.separador_logo_central{
+    margin: 0 70;
+}
+
+.Temporizador h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 65;
+    font-size: 50;
+    color: white;
+    font-weight: 100;
+}

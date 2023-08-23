@@ -2,8 +2,19 @@ body {
     margin: 20px; /* Aplica márgenes a todo el cuerpo de la página */
     padding: 0; /* Elimina cualquier relleno interno */
     box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
-  }
-  
+    font-family: "Muli","Helvetica","Arial","sans-serif";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Color_negro.jpg/1200px-Color_negro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Opcional, para ocultar barras de desplazamiento */
+}
   @media screen and (max-width: 990px) {
     .center {
       display: flex;
@@ -28,7 +39,7 @@ body {
     align-items: center;
 }
   
-  ul {
+ul {
     list-style: none;
     margin-top: 20px;
     padding: 0;
@@ -44,3 +55,28 @@ body {
     font-size: larger;
     width: 100%;
   }
+
+.primera_parte{
+  
+  padding: 40px;
+  display: flex;
+  background-color: aqua;
+  
+  
+}
+
+.primera_parte img{
+  
+  margin-left: 40px;
+  width: 80%;
+}
+
+.parrafo_primera_parte{
+  width: 70%;
+  font-size:larger;
+  margin-right: 20px;
+}
+
+
+
+

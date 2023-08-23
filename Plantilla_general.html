@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logo_lbg.png" type="image/png" />
+        <title>BEST Valencia</title>
+        <link rel="stylesheet" href="plantilla.css">
+    </head>
+    <body
+        id="page-top"
+        data-bs-spy="scroll"
+        data-bs-target="#mainNav"
+        data-bs-offset="56">
+
+    <div class="barra_principio">
+        <div class="transparencia_foto_principio">
+            <nav>
+                <div class="logo_pequeño">
+                    <a href="https://bestvalencia.org/"><img src="https://bestvalencia.org/images/logobestblanco.png" alt="Logo de Best Valencia" id="logobest" class="logo"></a>
+                </div>  
+
+                <div class="lista_barra">
+                    <p>Inicio</p>
+                    <p>Inscripción</p>
+                    <p>Calendario  y Horario</p>
+                    <p>Contáctanos</p>
+                    <p>Idioma</p>
+
+                </div>
+            </nav>
+
+            <div class="logo_central">
+                <img src="view_blanco.png" alt="Logo de View" id="view_blanco">
+                <div class="separador_logo_central"></div>
+                <p>
+                    Valencian Innovative <br> Engineering Week
+                </p>
+            </div>
+            <div class="Temporizador">
+                <h2 id="contador"></h2>
+              </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function actualizarContador() {
+      const fechaObjetivo = new Date('2023-11-20T00:00:00'); // Fecha objetivo: 20 de noviembre de 2023
+      const ahora = new Date();
+      const tiempoRestante = fechaObjetivo - ahora;
+    
+      const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+    
+      const contadorElemento = document.getElementById('contador');
+     contadorElemento.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s &nbsp;&nbsp;&nbsp;&nbsp; 20/11 - 27/11`;
+
+    
+      if (tiempoRestante <= 0) {
+        contadorElemento.innerHTML = '¡La cuenta atrás ha finalizado!';
+      }
+    }
+    
+    actualizarContador();
+    setInterval(actualizarContador, 1000);
+    </script>
+    </body>
+
+</html>
+
