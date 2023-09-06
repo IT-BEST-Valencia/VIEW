@@ -12,37 +12,44 @@ html, body {
     overflow: hidden; /* Opcional, para ocultar barras de desplazamiento */
   }
 
-.barra_principio{
-    background-image: url(https://bestvalencia.org/images/header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90%;
-}
-  
-.transparencia_foto_principio{
-    background-color: var(--color-principal);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
+  body{
+    overflow-y: auto;
+  }
+
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50;
+    background-color: rgb(157, 53, 198);
+
 }
 
 
 .logo_pequeño{
-    margin: 30 50;
+    margin: 45 50 30 50;
 }
 
-.logo_pequeño img{width:200;}
+.logo_pequeño img{width:100;}
+
+.derecha{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ 
+}
+
+.bolas{
+display: flex;
+align-items: center;
+}
+
+.bolas img{
+    margin-left: 20px;
+    width: 30px;
+}
+
 
 .lista_barra{
     display: flex;
@@ -54,12 +61,25 @@ nav{
 .lista_barra p{
     margin-top: 30;
     margin-right: 80;
-    color:white;
     font-style: italic;
     white-space: nowrap;
     font-size: 20;
+}
 
-
+.barra_principio{
+    background-image: url(https://bestvalencia.org/images/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+  
+.transparencia_foto_principio{
+    padding-top: 50;
+    background-color: var(--color-principal);
+    width: 100%;
+    height: 100%;
 }
 
 .logo_central{

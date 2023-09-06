@@ -13,23 +13,28 @@
         data-bs-target="#mainNav"
         data-bs-offset="56">
 
-    <div class="barra_principio">
-        <div class="transparencia_foto_principio">
             <nav>
                 <div class="logo_pequeño">
                     <a href="https://bestvalencia.org/"><img src="https://bestvalencia.org/images/logobestblanco.png" alt="Logo de Best Valencia" id="logobest" class="logo"></a>
-                </div>  
-
-                <div class="lista_barra">
-                    <p>Inicio</p>
-                    <p>Inscripción</p>
-                    <p>Calendario  y Horario</p>
-                    <p>Contáctanos</p>
-                    <p>Idioma</p>
-
                 </div>
+                <div class="derecha">
+                    <div class="bolas">
+                        <img src="./gmail.png" alt="">
+                        <img src="./ig.png" alt="">
+                        <img src="./Logo_apli.png" alt="">
+                    <div class="lista_barra">
+                        <p>Inicio</p>
+                        <p>Inscripción</p>
+                        <p>Calendario  y Horario</p>
+                        <p>Contáctanos</p>
+                        <p>Idioma</p>
+                    </div>
+                </div>
+            </div>
             </nav>
 
+    <div class="barra_principio">
+        <div class="transparencia_foto_principio">
             <div class="logo_central">
                 <img src="view_blanco.png" alt="Logo de View" id="view_blanco">
                 <div class="separador_logo_central"></div>
@@ -42,6 +47,10 @@
               </div>
         </div>
     </div>
+    <div class="prueba"><br><br><br></div>
+    <div class="separador"> Mucho texto</div>
+
+
 
 
 
@@ -66,7 +75,7 @@
       const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
     
       const contadorElemento = document.getElementById('contador');
-     contadorElemento.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s &nbsp;&nbsp;&nbsp;&nbsp; 20/11 - 27/11`;
+     contadorElemento.innerHTML = `${dias}d ${horas}h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20/11 - 27/11`;
 
     
       if (tiempoRestante <= 0) {
