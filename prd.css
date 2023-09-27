@@ -10,13 +10,24 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden; /* Opcional, para ocultar barras de desplazamiento */
+  position: fixed;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: #FAF7F6;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Aileron Regular', sans-serif;
+  color: #FAF7F6;
 }
 
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(157, 53, 198);
+  background-color: #60177A;
   padding-top: 20;
   position: fixed;
   width: 98.9%;
@@ -28,7 +39,7 @@ body{
 
 .logo_pequeño img{
   width: 15%;
-  margin: 0 0 20 60;
+  margin: 0 0 15 60;
 
 }
 
@@ -45,9 +56,9 @@ body{
 }
 
 .bolas img{
+  background-color: #FAF7F6;;
   width: 30;
   margin-left: 60px;
-  background-color: white;
   padding: 5;
   border-radius: 50%;
 }
@@ -57,22 +68,15 @@ body{
   margin-right: 20px;
 }
 
-.lista_barra p{
+.lista_barra h4{
   margin-right: 30;
-  font-style: italic;
   white-space: nowrap;
   font-size: 20;
 }
 
-
-
-.separador_barra{
-  background-color: rgb(192, 45, 187);
-  padding-bottom: 30;
-  margin-top: 125;
+.separador{
+  background-color: #FAF7F6;
 }
-
-
 
 
 .barra_principio{
@@ -81,20 +85,19 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 74.4%;
+  height: 97%;
   overflow: hidden;
 }
 
 .transparencia_foto_principio{
-  padding-top:10;
+  padding-top:180;
   background-color: var(--color-principal);
   width: 100%;
   height: 100%;
-
-  
 }
 
 .logo_central{
+  margin-left: 120;
   display: flex;
   justify-content:center; /* Centrar horizontalmente */
 }
@@ -106,13 +109,11 @@ body{
   padding-top: 20px;
 }
 
-.logo_central p{
-  color: white;
+.logo_central h2{
+  margin-top: 80;
   text-align: center;
   font-size: 55;
-  font-family: 'Segoe UI';
-  font-weight: 100;
-  
+  font-weight: 100; 
 }
 
 .separador_logo_central{
@@ -121,27 +122,35 @@ body{
 
 .Temporizador{
   height: 11%;
-}
-
-.Temporizador p{
   display: flex;
   justify-content: center;
+  padding-bottom: 30;
+  margin-left: 25;
+}
+
+.Temporizador h2{
+  display: flex;
+  justify-content: start;
   font-size: 50;
   color: white;
   font-weight: 100; 
+}
+
+.fecha{
+  display: flex;
+  justify-content: end;
+  padding-left: 90;
 }
 
 .frase p{
   color: white;
   text-align: center;
   font-size: 30;
-  font-family: 'Segoe UI';
-  font-weight: 100;
+  font-weight: 100;margin-left: 0;
 
 }
 
-.separador_inicio{
-  background-color: rgb(192, 45, 187);
+#separador_inicio{
   padding-bottom: 30;
 }
 
@@ -149,11 +158,11 @@ body{
 .descripcion{
   display: flex;
   justify-content: center;
+  background-color: #60177A;
 
 }
 
-.separador_desc{
-  background-color: rgb(192, 45, 187);
+#separador_desc{
   padding-bottom: 30;
 }
 
@@ -163,10 +172,11 @@ body{
   justify-content: center;
   font-size: 30;
   font-weight: 100;
+  background-color:  #60177A;
 }
 
-.separador_comp{
-  background-color: rgb(192, 45, 187);
+#separador_comp{
+  background-color:  #FAF7F6;
   padding-bottom: 5;
 }
 
@@ -185,30 +195,31 @@ body{
   background-color: rgba(104, 172, 233, 0.499);
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content:center; 
+  align-items: center;  
 }
 
 
 .competicion1{
   display: flex;
-  justify-content:center; /* Centrar horizontalmente */
+  justify-content:center; 
   align-items: center;
 }
 
 .competicion1 img {
   display: flex;
-  padding-top: 20px;
   width: 18%;
 }
 
 .competicion1 p{
-  margin-top: 55;
   max-width: 500px;
-  color: white;
-  font-size: 25;
+  font-size: 20;
 }
 
-.separador_competiciones{
-  width: 300px;
+#separador_competiciones{
+  width: 270px;
+  background-color: #FAF7F6;
 }
 
 .caja_competicion2{
@@ -222,15 +233,18 @@ body{
 }
 
 .transparencia_competicion2{
-  background-color: rgba(195, 204, 76, 0.499);
+  background-color: rgba(204, 76, 178, 0.499);
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content:center; /* Centrar horizontalmente */
+  align-items: center;
 }
 
 
 .competicion2{
   display: flex;
-  justify-content:center; /* Centrar horizontalmente */
+  justify-content:center; 
   align-items: center;
 }
 
@@ -239,10 +253,8 @@ body{
 }
 
 .competicion2 p{
-  margin-top: 55;
   max-width: 500px;
-  color: white;
-  font-size: 25;
+  font-size: 20;
 }
 
 
@@ -261,12 +273,15 @@ body{
   background-color: rgba(104, 172, 233, 0.499);
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
 }
 
 
 .competicion3{
   display: flex;
-  justify-content:center; /* Centrar horizontalmente */
+  justify-content:center; 
   align-items: center;
 }
 
@@ -279,8 +294,7 @@ body{
 .competicion3 p{
   margin-top: 55;
   max-width: 500px;
-  color: white;
-  font-size: 25;
+  font-size: 20;
 }
 
 
@@ -288,6 +302,6 @@ body{
   display: flex;
   background-color: black;
   padding: 20;
-  justify-content: center;
+  justify-content:space-around;
 }
 
