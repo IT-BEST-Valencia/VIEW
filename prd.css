@@ -305,3 +305,32 @@ body{
   justify-content:space-around;
 }
 
+*, ::after, ::before {
+box-sizing: border-box
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-27px);
+  }
+  100% {
+    transform: translateX(calc(-250px * 16));
+  }
+}
+.slider {
+  height: 100px;
+  overflow: hidden;
+  width: auto;
+  margin: 0px;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 16);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
