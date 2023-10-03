@@ -1,16 +1,16 @@
-:root{
-  --color-principal: #76087a67;
-  --color-secundario: blue;
-}
-
-
+@media only screen and (min-width:1000px){
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Opcional, para ocultar barras de desplazamiento */
   position: fixed;
+  overflow:auto; /* Opcional, para ocultar barras de desplazamiento */
+}
+
+:root{
+  --color-principal: #76087a67;
+  --color-secundario: blue;
 }
 
 p{
@@ -23,6 +23,12 @@ h1,h2,h3,h4,h5,h6{
   color: #FAF7F6;
 }
 
+body{
+  overflow-y: auto;
+  
+}
+
+
 nav{
   display: flex;
   align-items: center;
@@ -30,12 +36,11 @@ nav{
   background-color: #60177A;
   padding-top: 20;
   position: fixed;
-  width: 98.9%;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
 }
 
-body{
-  overflow-y: auto;
-}
 
 .logo_pequeño img{
   width: 15%;
@@ -72,6 +77,16 @@ body{
   margin-right: 30;
   white-space: nowrap;
   font-size: 20;
+  align-items: center;
+}
+
+.lista_barra a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.lista_barra h4 .idioma{
+  align-items: end;
 }
 
 .separador{
@@ -81,6 +96,7 @@ body{
 
 .barra_principio{
   background-image: url(https://bestvalencia.org/images/header.jpg);
+  max-width: 100%;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +115,7 @@ body{
 .logo_central{
   margin-left: 120;
   display: flex;
-  justify-content:center; /* Centrar horizontalmente */
+  justify-content:space-evenly; /* Centrar horizontalmente */
 }
 
 .logo_central img {
@@ -143,10 +159,11 @@ body{
 }
 
 .frase p{
-  color: white;
+  color: #FAF7F6;
   text-align: center;
   font-size: 30;
   font-weight: 100;margin-left: 0;
+  padding-top: 40;
 
 }
 
@@ -164,6 +181,7 @@ body{
 
 #separador_desc{
   padding-bottom: 30;
+  background-color: #FAF7F6;
 }
 
 
@@ -297,6 +315,9 @@ body{
   font-size: 20;
 }
 
+#separador_desc{
+  background-color: #60177A;;
+}
 
 .redes_sociales{
   display: flex;
@@ -304,33 +325,50 @@ body{
   padding: 20;
   justify-content:space-around;
 }
-
 *, ::after, ::before {
-box-sizing: border-box
+  box-sizing: border-box;
+  
 }
 
 @keyframes scroll {
+
   0% {
-    transform: translateY(-27px);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(calc(-250px * 16));
   }
 }
+
+.Empresas_colaboradoras{
+  overflow-x: hidden;
+}
+
+
 .slider {
   height: 100px;
   overflow: hidden;
   width: auto;
   margin: 0px;
+
 }
 
 .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 17s linear infinite; /* Reduce la duración de la animación */
   display: flex;
   width: calc(250px * 16);
 }
+
+/* Duplica las imágenes para crear la ilusión de continuidad */
 .slider .slide {
   height: 100px;
   width: 250px;
 }
+.slider .slide:last-child::after {
+  content: ""; /* Pseudo-elemento para duplicar las imágenes */
+  width: 250px;
+}
+}
+
+
 

@@ -14,25 +14,33 @@
     <body id="page-top" data-bs-spy="scroll"data-bs-target="#mainNav" data-bs-offset="56">
 <nav>
     <div class="logo_pequeño"> <!-- Este es el logo de BEST blanco -->
-        <a href="https://bestvalencia.org/"><img src="https://bestvalencia.org/images/logobestblanco.png" alt="Logo de Best Valencia" id="logobest"></a>
+        <a href="#barra_principio"><img src="https://bestvalencia.org/images/logobestblanco.png" alt="Logo de Best Valencia" id="logobest"></a>
     </div>
     <div class="bloque_derecho"> <!--Esto div contiene las redes sociales y los textos de la barra -->
         <div class="bolas">
             <a href=""><img src="./gmail.png" alt=""></a> <!--Siguen sin enlace y texto alternativo pero bueno ya lo tendrán -->
-            <a href=""><img src="./ig.png" alt=""></a>
-            <a href=""><img src="./Logo_apli.png" alt=""></a>
+            <a href="https://www.instagram.com/bestvalenciaupv/"><img src="./ig.png" alt=""></a>
+            <a href="https://bestvalencia.org"><img src="./Logo_apli.png" alt=""></a>
         </div>
         <div class="lista_barra"> <!--Se escribe como una serie de títulos pa concordarlo con la fuente -->
-            <h4>Inicio</h4>
+           <h4><a href="#barra_principio">Inicio</a></h4>
             <h4>Empresas</h4>
             <h4>Calendario</h4>
-            <h4>Idioma</h4>
-            <h4>Inscripción</h4>
+                        <h4>Inscripción</h4>
+            <h4 class="idioma"><form>
+                <select name="idioma" id="idioma" onchange="redirigir()">
+                    <option value="Valenciano"><a href="./plantilla_prd.html">Valenciano</a></option>
+                    <option value="Español">Español</option>
+                    <option value="Inglés">Inglés</option>
+                </select>
+            </form>
+
+            </h4>
         </div>
     </div>
 </nav> <!-- Cerramos barra de navegación -->
 
-<div class="barra_principio"> <!-- Este es el trozo con la imagen -->
+<div class="barra_principio" id="barra_principio"> <!-- Este es el trozo con la imagen -->
     <div class="transparencia_foto_principio"> <!-- Como no sé hacer la transparencia, he hecho un div que se solape por encima--> 
         <div class="logo_central"> <!--Aquí se incluye todo el trozo central, aunque ponga solo logo -->
             <img src="view_blanco.png" alt="Logo de View" id="view_blanco"> <!-- Aquí el logo con tal -->
@@ -112,8 +120,7 @@
 </div>
 
 <!-- Aquí pondremos lo de las slides de las empresas-->
-<div class="Empresas_colaboradoras" style="display: flex; justify-content: center; padding: 100; font-size: 30;">
-    <p style="color: black">EMPRESAS CON SLIDES</p>
+<div class="Empresas_colaboradoras" style="display: flex; justify-content: center; padding: 10 0 40 0; align-items: center; font-size: 30;">
     <section class="bg-gray-100 py-8" id="empresas">
         <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
           <!--<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
@@ -172,16 +179,62 @@
           <div class="slide">
               <img src="https://emplea.webs.upv.es/logos/siemens.png" height="100" width="250" alt="" />
           </div>
+
+
+          <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/airbus.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/bbva.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/bp.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/edwards.png" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/fermax.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/ford.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/hp2.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/huawei.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/Mercadona.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/Minsait.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/nttdata.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/pwc.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/sanlucar.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://media.webs.upv.es/emplea/logos/bsantander.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="https://emplea.webs.upv.es/logos/siemens.png" height="100" width="250" alt="" />
+        </div>          
       </div>
   </div>
           <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
-          
           </div>
         </div>
       </section>
 </div>
 
-<div class="separador_desc">
+<div class="Separador" id="separador_desc">
 </div>
 
 <!-- Un trozo pa las redes sociales, la verdad que mucha vuelta no le he dado aún-->
@@ -190,6 +243,16 @@
     <a href=""><img style="display: flex;  width: 50px;" src="./gmail.png" alt=""></a>
     <a href=""><img style="display: flex;  width: 50px;" src="./gmail.png" alt=""></a>
 </div>
+
+
+<script>
+    function redirigir() {
+      var seleccionado = document.getElementById("idioma").value;
+      if (seleccionado === "Valenciano") {
+        window.location.href = "http://bestvalencia.org";
+      }
+    }
+  </script>
 
 <script>
     function actualizarContador() {

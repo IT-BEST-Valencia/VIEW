@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logo_lbg.png" type="image/png" />
+        <title>BEST Valencia</title>
+        <link rel="stylesheet" href="prd_movil.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" type="text/css" href="./Fuentes/Aileron-Regular.otf"> <!-- En estas dos líneas se incluyen las fuentes usadas-->
+    </head>
+
+
+    <body id="page-top" data-bs-spy="scroll"data-bs-target="#mainNav" data-bs-offset="56">
+        <nav>
+            <div class="logo_pequeño"> <!-- Este es el logo de BEST blanco -->
+                <img src="https://bestvalencia.org/images/logobestblanco.png" alt="Logo de Best Valencia" id="logobest">
+            </div>
+            <div class="bloque_derecho"> <!--Esto div contiene las redes sociales y los textos de la barra -->
+                <div class="bolas">
+                    <img src="./gmail.png" alt=""> <!--Siguen sin enlace y texto alternativo pero bueno ya lo tendrán -->
+                    <img src="./ig.png" alt="">
+                    <img src="./Logo_apli.png" alt="">
+                </div>
+
+                <div class="lista_barra"> <!--Se escribe como una serie de títulos pa concordarlo con la fuente -->
+                    <h4><a href="#barra_principio">Inicio</a></h4>
+                     <h4>Empresas</h4>
+                     <h4>Calendario</h4>
+                     <h4>Inscripción</h4>
+                     <h4 class="idioma"><form><div class="idioma">
+                         <select name="idioma" id="idioma" onchange="redirigir()">
+                             <option value="Valenciano"><a href="./plantilla_prd.html">Valenciano</a></option>
+                             <option value="Español">Español</option>
+                             <option value="Inglés">Inglés</option>
+                            </div>
+                         </select>
+                     </form>
+         
+                     </h4>
+                 </div>
+            </div>
+    </nav>
+
+    div class="barra_principio" id="barra_principio"> <!-- Este es el trozo con la imagen -->
+    <div class="transparencia_foto_principio"> <!-- Como no sé hacer la transparencia, he hecho un div que se solape por encima--> 
+        <div class="logo_central"> <!--Aquí se incluye todo el trozo central, aunque ponga solo logo -->
+            <img src="view_blanco.png" alt="Logo de View" id="view_blanco"> <!-- Aquí el logo con tal -->
+
+            <div class="separador_logo_central"></div> <!-- Un simple separador. No me salía bien vale??-->
+
+                <h2>
+                    Valencian Innovative <br> Engineering Week
+                </h2>
+            </div>
+        <div class="Temporizador"> <!-- Aquí tenemos lo del temporizador. Lo siento lo copié del chat, no sé Java-->
+            <h2 id="contador"></h2>
+            <div style="width: 120;"></div>
+            <h2 class="fecha">20/11 - 27/11</h2> <!-- Separo la fecha porque así lo engancho mejor en css-->
+        </div>
+          
+          <div class="frase"> <!-- La frase que aún no sabemos qué escribir-->
+            <p>Una frase larga <br> de dos líneas</p>
+        </div>
+    </div>
+</div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                function redirigir() {
+                  var seleccionado = document.getElementById("idioma").value;
+                  if (seleccionado === "Valenciano") {
+                    window.location.href = "http://bestvalencia.org";
+                  }
+                }
+              </script>
+    </html>
