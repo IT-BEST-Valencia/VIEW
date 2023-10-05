@@ -1,5 +1,5 @@
 
-@media only screen and (min-width:220px) and (max-width:560px){
+@media only screen and (min-width:320px) and (max-width:760px){
   
 
     html, body {
@@ -9,7 +9,7 @@
       height: 100%;
       position: fixed;
       overflow: hidden;
-      overflow-x:scroll;
+      overflow-y:scroll;
       
     }
     
@@ -44,7 +44,7 @@
     }
 
     .logo_pequeño img{
-      max-height: 10;
+        height: 60%;
         width: auto;
         margin: 0 0 0 30;    
     }
@@ -53,6 +53,7 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+        align-items: center;
     }
 
     .bolas {
@@ -60,7 +61,6 @@
         justify-content: end;
         align-items: start;
         margin-right: 5%;
-      
       }
 
     .bolas img{
