@@ -101,28 +101,32 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 97%;
+  height: 97% ;
+  min-height: 700;
   overflow: hidden;
 }
 
 .transparencia_foto_principio{
-  padding-top:180;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
   background-color: var(--color-principal);
   width: 100%;
   height: 100%;
+  display: flex;
 }
 
 .logo_central{
-  margin-left: 120;
   display: flex;
+  padding-top: 1%;
   justify-content:space-evenly; /* Centrar horizontalmente */
 }
 
 .logo_central img {
   width: 20%;
-  height: auto;
   display: flex;
-  padding-top: 20px;
+  min-width: 20%;
+
 }
 
 .logo_central h2{
@@ -132,9 +136,7 @@ nav{
   font-weight: 100; 
 }
 
-.separador_logo_central{
-  width: 100px; 
-}
+
 
 .Temporizador{
   height: 11%;
@@ -158,16 +160,23 @@ nav{
   padding-left: 90;
 }
 
+.frase{
+  margin-top: 1%;
+}
+
 .frase p{
   color: #FAF7F6;
   text-align: center;
   font-size: 30;
-  font-weight: 100;margin-left: 0;
-  padding-top: 40;
+  font-weight: 100;
+  margin-left: 0;
+  margin-bottom: 5%;
+  margin-top: 3%;
 
 }
 
 #separador_inicio{
+  color: inherit;
   padding-bottom: 30;
 }
 
@@ -206,7 +215,7 @@ nav{
   background-repeat: no-repeat;
   width: 100%;
   height: 50%;
-  overflow: hidden;
+  position: relative;
 }
 
 .transparencia_competicion1{
@@ -228,15 +237,16 @@ nav{
 .competicion1 img {
   display: flex;
   width: 18%;
+  height: auto;
 }
 
 .competicion1 p{
   max-width: 500px;
-  font-size: 20;
+  font-size: 125%;
 }
 
 #separador_competiciones{
-  width: 270px;
+  width: 10%;
   background-color: #FAF7F6;
 }
 
