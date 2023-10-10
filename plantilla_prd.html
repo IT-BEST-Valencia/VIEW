@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -18,28 +19,20 @@
     </div>
     <div class="bloque_derecho"> <!--Esto div contiene las redes sociales y los textos de la barra -->
         <div class="bolas">
-            <a href=""><img src="./gmail.png" alt=""></a> <!--Siguen sin enlace y texto alternativo pero bueno ya lo tendrán -->
-            <a href="https://www.instagram.com/bestvalenciaupv/"><img src="./ig.png" alt=""></a>
-            <a href="https://bestvalencia.org"><img src="./Logo_apli.png" alt=""></a>
+            <img src="./gmail.png" alt=""> <!--Siguen sin enlace y texto alternativo pero bueno ya lo tendrán -->
+            <img src="./ig.png" alt="">
+            <img src="./Logo_apli.png" alt="">
         </div>
         <div class="lista_barra"> <!--Se escribe como una serie de títulos pa concordarlo con la fuente -->
            <h4><a href="#barra_principio">Inicio</a></h4>
             <h4>Empresas</h4>
             <h4>Calendario</h4>
-                        <h4>Inscripción</h4>
-            <h4 class="idioma"><form>
-                <select name="idioma" id="idioma" onchange="redirigir()">
-                    <option value="Valenciano"><a href="./plantilla_prd.html">Valenciano</a></option>
-                    <option value="Español">Español</option>
-                    <option value="Inglés">Inglés</option>
-                </select>
-            </form>
-
-            </h4>
+            <h4>Inscripción</h4>
         </div>
     </div>
 </nav> <!-- Cerramos barra de navegación -->
-<div style="height: 20%;"></div>
+
+<div style="height: 10%;"></div>
 <div class="barra_principio" id="barra_principio"> <!-- Este es el trozo con la imagen -->
     <div class="transparencia_foto_principio"> <!-- Como no sé hacer la transparencia, he hecho un div que se solape por encima--> 
         <div class="logo_central"> <!--Aquí se incluye todo el trozo central, aunque ponga solo logo -->
@@ -242,15 +235,6 @@
     <a href=""><img style="display: flex;  width: 50px;" src="./gmail.png" alt=""></a>
 </div>
 
-
-<script>
-    function redirigir() {
-      var seleccionado = document.getElementById("idioma").value;
-      if (seleccionado === "Valenciano") {
-        window.location.href = "http://bestvalencia.org";
-      }
-    }
-  </script>
 
 <script>
     function actualizarContador() {
