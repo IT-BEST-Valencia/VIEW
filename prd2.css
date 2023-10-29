@@ -1,4 +1,4 @@
-@media only screen and (min-width:880px){
+@media only screen and (min-width:820px){
 html, body {
   margin: 0;
   padding: 0;
@@ -54,8 +54,7 @@ nav{
   background-color: #FAF7F6;;
   width: 30;
   margin-left: 60px;
-  padding: 5;
-  border-radius: 50%;
+  background-color: #532161;
 }
 
 .lista_barra{
@@ -83,6 +82,13 @@ nav{
   background-color: #FAF7F6;
 }
 
+.descripcion h3{
+  max-width: 70%;
+  display: flex;
+  text-align: justify;
+  text-align-last: center;
+
+}
 
 .barra_principio{
   background-image: url(./Imagenes/header.jpg);
@@ -133,9 +139,7 @@ nav{
   justify-content: center;
 }
 
-.separa_tempo{
-  width: 0%;
-}
+
 .Temporizador h2{
   display: flex;
   justify-content: space-around;
@@ -166,14 +170,15 @@ nav{
 
 #separador_inicio{
   color: inherit;
-  padding-bottom: 30;
+  padding-bottom: 10;
 }
 
 
 .descripcion{
   display: flex;
   justify-content: center;
-  background-color: #803395;
+  background:  linear-gradient(to bottom,#48095d, #996AA6);
+  
 
 }
 
@@ -188,7 +193,7 @@ nav{
   justify-content: center;
   font-size: 30;
   font-weight: 100;
-  background-color:  #803395;
+  background: linear-gradient(to bottom,#996AA6,#48095d);
 }
 
 #separador_comp{
@@ -203,7 +208,7 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 .transparencia_competicion1{
@@ -231,7 +236,8 @@ nav{
 .competicion1 p{
   display: flex;
   max-width: 50%;
-  font-size: 1.4vmax;
+  text-align: justify;
+  font-size: 1.3vmax;
 }
 
 #separador_competiciones{
@@ -240,12 +246,13 @@ nav{
 }
 
 .caja_competicion2{
-  background-image: url(./Imagenes/valencia.jpg);
+  background-image: url(./Imagenes/gente1.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
-  height: 50%;
+  height: 40%;
   overflow: hidden;
 }
 
@@ -272,18 +279,20 @@ nav{
 .competicion2 p{
   display: flex;
   max-width: 50%;
-  font-size: 1.4vmax;
+  text-align: justify;
+  font-size: 1.5vmax;
 }
 
 
 
 .caja_competicion3{
-  background-image: url(./Imagenes/hemisferic.jpg);
+  background-image: url(./Imagenes/gente2.jpeg);
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 50%;
+  height: 40%;
   overflow: hidden;
 }
 
@@ -312,19 +321,60 @@ nav{
 .competicion3 p{
   display: flex;
   max-width: 50%;
-  font-size: 1.4vmax;
+  font-size: 1.3vmax;
+  text-align: justify;
 }
 
 #separador_desc{
   background-color: #803395 ;
 }
 
-.redes_sociales{
+.end{
   display: flex;
-  background-color: black;
-  padding: 20;
+  background-color: rgb(151, 59, 59);
   justify-content:space-around;
 }
+.end ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.end ul li {
+  flex: 1;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.lista_redes{
+  display: flex;
+  background-color: rgb(151, 59, 59);
+  justify-content:space-around;
+}
+
+.redes_sociales {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.redes_sociales img{
+  filter: grayscale(100%); /* Cambia la saturación al 100% para obtener una imagen en blanco y negro */
+  display: flex;
+  height: 50px;
+  color: #FAF7F6;
+  margin-bottom: 15px;
+}
+
+
+.lista_redes{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 *, ::after, ::before {
   box-sizing: border-box;
   
@@ -430,9 +480,8 @@ nav{
       display: flex;
       justify-content: end;
       margin-right: 5%;
-    
     }
-
+    
   .bolas img{
       display: flex;
       align-items: center;
@@ -557,11 +606,12 @@ padding-bottom: 15;
 .descripcion{
 display: flex;
 justify-content: center;
-background-color: #803395;
+background:  linear-gradient(to bottom,#48095d, #996AA6);
+padding-bottom: 50px;
 }
 
 .descripcion h3{
-font-size: 2.5vmax;
+font-size: 1.5vmax;
 text-align: center;
 }
 
@@ -576,7 +626,7 @@ display: flex;
 justify-content: center;
 font-size: 30;
 font-weight: 100;
-background-color:  #803395;
+background:  linear-gradient(to bottom, #996AA6,#48095d);
 }
 
 #separador_comp{
@@ -679,8 +729,9 @@ font-size: 1.6vmax;
 }
 
 .caja_competicion3{
-background-image: url(./Imagenes/hemisferic.jpg);
+background-image: url(./Imagenes/gente2.jpeg);
 background-attachment: fixed;
+background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 width: 100%;
@@ -763,7 +814,7 @@ background-color: #803395 ;
 }
 
 
-.redes_sociales{
+.end{
 display: flex;
 background-color: black;
 padding: 20;
@@ -774,7 +825,7 @@ justify-content:space-around;
 
 
 
-@media only screen and (min-width:561px) and (max-width:880px){
+@media only screen and (min-width:561px) and (max-width:819px){
   html, body {
     margin: 0;
     padding: 0;
@@ -801,16 +852,16 @@ justify-content:space-around;
     justify-content: space-between;
     background-color: #532161;
     width: 100%;
-    height: 25%;
+    height: 15%;
     position: fixed;
     z-index: 10000000;
   }
   
   
   .logo_pequeño img{
-    width: 35%;
+    width: 40%;
     max-height: 100px;
-    margin: 0 0 15 30;
+    margin: 0 0 15 50 ;
   
   }
   
@@ -910,6 +961,7 @@ justify-content:space-around;
   .fecha{
     display: flex;
     justify-content: center;
+    margin-left: 10%;
   }
   
   .frase{
@@ -935,10 +987,16 @@ justify-content:space-around;
   .descripcion{
     display: flex;
     justify-content: center;
-    background-color: #803395;
-  
+    background:  linear-gradient(to bottom,#48095d, #996AA6);
   }
   
+  .descripcion h3{
+    width: 70%;
+    font-size: 2.35vmax;
+    text-align: justify;
+    padding-bottom: 40px;
+    }
+
   #separador_desc{
     padding-bottom: 30;
     background-color: #FAF7F6;
@@ -950,7 +1008,7 @@ justify-content:space-around;
     justify-content: center;
     font-size: 30;
     font-weight: 100;
-    background-color:  #803395;
+    background:  linear-gradient(to bottom, #996AA6,#48095d);
   }
   
   #separador_comp{
@@ -965,7 +1023,7 @@ justify-content:space-around;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50%;
+    height: 32.5%;
   }
   
   .transparencia_competicion1{
@@ -993,7 +1051,7 @@ justify-content:space-around;
   .competicion1 p{
     display: flex;
     max-width: 50%;
-    font-size: 1.4vmax;
+    font-size: 1.6vmax;
   }
   
   #separador_competiciones{
@@ -1002,12 +1060,13 @@ justify-content:space-around;
   }
   
   .caja_competicion2{
-    background-image: url(./Imagenes/valencia.jpg);
+    background-image: url(./Imagenes/gente1.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50%;
+    height: 32.5%;
     overflow: hidden;
   }
   
@@ -1034,18 +1093,20 @@ justify-content:space-around;
   .competicion2 p{
     display: flex;
     max-width: 50%;
-    font-size: 1.4vmax;
+    font-size: 1.6vmax;
+    text-align: justify;
   }
   
   
   
   .caja_competicion3{
-    background-image: url(./Imagenes/hemisferic.jpg);
+    background-image: url(./Imagenes/gente2.jpeg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50%;
+    height: 32.5%;
     overflow: hidden;
   }
   
@@ -1067,21 +1128,20 @@ justify-content:space-around;
   
   .competicion3 img {
     display: flex;
-    padding-top: 20px;
     width: 18%;
   }
   
   .competicion3 p{
     display: flex;
     max-width: 50%;
-    font-size: 1.4vmax;
+    font-size: 1.6vmax;
   }
   
   #separador_desc{
     background-color: #803395 ;
   }
   
-  .redes_sociales{
+  .end{
     display: flex;
     background-color: black;
     padding: 20;
@@ -1132,7 +1192,7 @@ justify-content:space-around;
   }
   }
 
-@media only screen and (min-width:220px) and (max-width:560px) and (min-height:400px) and (max-height:650px){
+@media  only screen and (min-width:220px) and (max-width:560px) and (min-height:400px) and (max-height:650px){
   
 
     html, body {
@@ -1323,7 +1383,7 @@ justify-content:space-around;
   .descripcion{
   display: flex;
   justify-content: center;
-  background-color: #803395;
+  background:  linear-gradient(to bottom,#48095d, #996AA6);
   }
   
   .descripcion h3{
@@ -1342,7 +1402,7 @@ justify-content:space-around;
   justify-content: center;
   font-size: 25;
   font-weight: 100;
-  background-color:  #803395;
+  background:  linear-gradient(to bottom, #996AA6,#48095d);
   }
   
   #separador_comp{
@@ -1404,8 +1464,9 @@ justify-content:space-around;
   }
   
   .caja_competicion2{
-  background-image: url(./Imagenes/valencia.jpg);
+  background-image: url(./Imagenes/gente1.jpg);
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1446,8 +1507,9 @@ justify-content:space-around;
   }
   
   .caja_competicion3{
-  background-image: url(./Imagenes/hemisferic.jpg);
+  background-image: url(./Imagenes/gente2.jpeg);
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1530,7 +1592,7 @@ justify-content:space-around;
   }
   
   
-  .redes_sociales{
+  .end{
   display: flex;
   background-color: black;
   padding: 20;
@@ -1735,7 +1797,7 @@ justify-content:space-around;
   .descripcion{
   display: flex;
   justify-content: center;
-  background-color: #803395;
+  background:  linear-gradient(to bottom,#48095d, #996AA6);
   }
   
   .descripcion h3{
@@ -1754,7 +1816,7 @@ justify-content:space-around;
   justify-content: center;
   font-size: 25;
   font-weight: 100;
-  background-color:  #803395;
+  background:  linear-gradient(to bottom, #996AA6#48095d);
   }
   
   #separador_comp{
@@ -1816,11 +1878,12 @@ justify-content:space-around;
   }
   
   .caja_competicion2{
-  background-image: url(./Imagenes/valencia.jpg);
+  background-image: url(./Imagenes/gente1.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  background-position: center;
   height: 50%;
   overflow: hidden;
   }
@@ -1858,12 +1921,13 @@ justify-content:space-around;
   }
   
   .caja_competicion3{
-  background-image: url(./Imagenes/hemisferic.jpg);
+  background-image: url(./Imagenes/gente2.jpeg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 50%;
+  background-position: center;
   position: relative;
   }
   
@@ -1942,7 +2006,7 @@ justify-content:space-around;
   }
   
   
-  .redes_sociales{
+  .end{
   display: flex;
   background-color: black;
   padding: 20;
