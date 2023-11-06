@@ -32,10 +32,9 @@ nav{
 
 
 .logo_pequeño img{
-  width: 22.5%;
-  max-height: 900px;
+  width: 40%;
+  max-width: 350px;
   margin: 0 0 15 60;
-
 }
 
 .bloque_derecho{
@@ -184,7 +183,7 @@ nav{
 
 #separador_desc{
   padding-bottom: 30;
-  background-color: #FAF7F6;
+  background-color: #FAF7F6 ;
 }
 
 
@@ -470,7 +469,6 @@ text-align: start;
   font-size: 1.25vw;
   text-align: start;
   text-decoration: none;
-  text-decoration: underline;
   text-decoration-color: #FAF7F6;
   
   }
@@ -1093,7 +1091,6 @@ text-align: start;
   font-size: 1.5vw;
   text-align: start;
   text-decoration: none;
-  text-decoration: underline;
   text-decoration-color: #FAF7F6;
   
   }
@@ -1633,7 +1630,6 @@ text-align: start;
     font-size: 1.7vw;
     text-align: start;
     text-decoration: none;
-    text-decoration: underline;
     text-decoration-color: #FAF7F6;
     
     }
@@ -2209,7 +2205,6 @@ text-align: start;
   font-size: 1.7vw;
   text-align: start;
   text-decoration: none;
-  text-decoration: underline;
   text-decoration-color: #FAF7F6;
   
   }
