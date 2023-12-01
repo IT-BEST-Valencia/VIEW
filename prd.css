@@ -230,7 +230,7 @@ nav{
   display: flex;
   width: 17%;
   height: auto;
-  border-radius: 30%;
+  
 }
 
 .competicion1 p{
@@ -274,7 +274,7 @@ nav{
 
 .competicion2 img{
   width: 17%;
-  border-radius: 30%;
+  
 }
 
 .competicion2 p{
@@ -293,7 +293,7 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 40%;
+  height: 45%;
   overflow: hidden;
 }
 
@@ -317,7 +317,7 @@ nav{
   display: flex;
   padding-top: 20px;
   width: 18%;
-  border-radius: 30%;
+  
 }
 
 .competicion3 p{
@@ -794,7 +794,7 @@ flex-direction: column;
 display: flex;
 width: 40%;
 height: auto;
-border-radius: 30%;
+ 
 }
 
 .competicion1 p{
@@ -847,7 +847,7 @@ flex-direction: column;
 display: flex;
 width: 40%;
 height: auto;
-border-radius: 30%;
+ 
 }
 
 .competicion2 p{
@@ -888,7 +888,7 @@ flex-direction: column;
 display: flex;
 width: 40%;
 height: auto;
-border-radius: 30%;
+ 
 }
 
 .competicion3 p{
@@ -1348,7 +1348,7 @@ text-align: start;
     display: flex;
     width: 18%;
     height: auto;
-    border-radius: 30%;
+     
   }
   
   .competicion1 p{
@@ -1391,7 +1391,7 @@ text-align: start;
   
   .competicion2 img{
     width: 17%;
-    border-radius: 30%;
+     
   }
   
   .competicion2 p{
@@ -1433,7 +1433,7 @@ text-align: start;
   .competicion3 img {
     display: flex;
     width: 18%;
-    border-radius: 30%;
+     
   }
   
   .competicion3 p{
@@ -1924,7 +1924,7 @@ text-align: start;
   display: flex;
   width: 37.5%;
   height: auto;
-  border-radius: 30%;
+   
   }
   
   .competicion1 p{
@@ -1978,7 +1978,7 @@ text-align: start;
   display: flex;
   width: 37.5%;
   height: auto;
-  border-radius: 30%;
+   
   }
   
   .competicion2 p{
@@ -2020,7 +2020,7 @@ text-align: start;
   display: flex;
   width: 37.5%;
   height: auto;
-  border-radius: 30%;
+   
   }
   
   .competicion3 p{
@@ -2502,7 +2502,7 @@ text-align: start;
   display: flex;
   width:22.5%;
   height: auto;
-  border-radius: 30%;
+   
   }
   
   .competicion1 p{
@@ -2556,7 +2556,7 @@ text-align: start;
   display: flex;
   width:22.5%;
   height: auto;
-  border-radius: 30%;
+   
   }
   
   .competicion2 p{
@@ -2598,7 +2598,7 @@ text-align: start;
   display: flex;
   width:22.5%;
   height: auto;
-  border-radius: 30%;
+   
   }
   
   .competicion3 p{
