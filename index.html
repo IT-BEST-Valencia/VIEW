@@ -32,6 +32,25 @@
 </nav> <!-- Cerramos barra de navegación -->
 
 
+<div class="oculto">
+    <div class="logo_pequeño"> <!-- Este es el logo de BEST blanco -->
+        <a href="#page-top"><img src="./Imagenes/logobestblanco.png" alt="Logo de Best Valencia" id="logobest"></a>
+    </div>
+    <div class="bloque_derecho"> <!--Esto div contiene las redes sociales y los textos de la barra -->
+        <div class="bolas">
+            <a href="mailto:contacto@bestvalencia.org?subject=VIEW BEST" target="_blank"><img src="./Imagenes/gmail2.png" alt=""></a> <!--Siguen sin enlace y texto alternativo pero bueno ya lo tendrán -->
+            <a href="https://www.instagram.com/bestvalenciaupv/" target="_blank"><img src="./Imagenes/ig2.png" alt=""></a>
+            <a href="http://bestvalencia.org/index.html" target="_blank"><img src="./Imagenes/Logo_apli2.png" alt=""></a>
+        </div>
+        <div class="lista_barra"> <!--Se escribe como una serie de títulos pa concordarlo con la fuente -->
+           <h4><a href="#page-top">Inicio</a></h4>
+            <h4><a href="./view23.html">VIEW 23</a></h4>
+            <h4><a href="./Recursos/Calendario.pdf" target="_blank">Calendario</a></h4>
+            <h4><a href="https://docs.google.com/forms/d/e/1FAIpQLScac-B9evhMkVRALYbNmN4WKzPMWak9NW0w1H9tFUUt2e7s3g/viewform" target="_blank">Inscripción</a></h4>
+        </div>
+    </div>
+</div>
+
 <div class="barra_principio" id="barra_principio"> <!-- Este es el trozo con la imagen -->
     <div class="transparencia_foto_principio"> <!-- Como no sé hacer la transparencia, he hecho un div que se solape por encima--> 
         <div class="logo_central"> <!--Aquí se incluye todo el trozo central, aunque ponga solo logo -->
@@ -253,7 +272,8 @@
 
 
 <script>
-    function actualizarContador() {
+ 
+ function actualizarContador() {
   const fechaObjetivo = new Date('2023-11-20T00:00:00'); // Fecha objetivo: 20 de noviembre de 2023
   const ahora = new Date();
   const tiempoRestante = fechaObjetivo - ahora;
@@ -268,12 +288,13 @@
 
 
   if (tiempoRestante <= 0) {
-    contadorElemento.innerHTML = '¡El evento ya ha terminado!';
+    contadorElemento.innerHTML = '';
   }
 }
 
 actualizarContador();
 setInterval(actualizarContador, 1000);
+
 </script>
     </body>
 </html>

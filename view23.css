@@ -1,4 +1,31 @@
-.html,body{
+
+@media all{
+img{
+      filter: drop-shadow(0 8px 4px rgba(0, 0, 0, 0.7));
+  
+    }
+  
+  p,h1,h2,h4,h5{
+    text-shadow: black 0.3em 0.35em 0.3em;
+  }
+  
+h3{
+  text-shadow: black 0.3em 0.35em 5.8em;
+}
+#empresa{
+  filter: drop-shadow(0 5px 22px rgba(0, 0, 0, 0.5));
+}
+
+#empresa_acciona{
+  filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.5));
+}
+
+  }
+
+
+
+
+html,body{
     background-color: black;
 }
 @media only screen and (min-width:820px){
@@ -32,6 +59,16 @@
       position: fixed;
       z-index: 10000000;
     }
+
+
+    .oculto{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #532161;
+      padding-top: 20;
+      width: 100%;
+    }    
     
     
     .logo_pequeño img{
@@ -53,10 +90,9 @@
     }
     
     .bolas img{
-      background-color: #FAF7F6;;
+
       width: 30;
       margin-left: 60px;
-      background-color: #532161;
     }
     
     .lista_barra{
@@ -109,7 +145,7 @@
         display: flex;
         background-color: #FAF7F6;
         width: 80%;
-        margin-top: 25vh;
+        margin-top: 3vh;
         margin-bottom: 5%;
         align-self: center;
         justify-content: center;
@@ -179,7 +215,7 @@
     
     .contenido{
       display: flex;
-      width: 25%;
+      width: 30%;
       text-align: center;
       justify-content: center;
       
@@ -348,6 +384,14 @@
           justify-content: space-between;
       }
     
+
+      .oculto{
+        display: flex;
+        background-color: #532161;
+        height: 15.5%;
+        width: 100%;
+        justify-content: space-between;
+    }
     
       .logo_pequeño{
         display: flex;
@@ -377,10 +421,8 @@
       }
       
       .bolas img{
-        background-color: #FAF7F6;;
         width: 20;
         margin-left: 20px;
-        background-color: #532161;
       }
       
     .lista_barra{
@@ -433,7 +475,7 @@
         display: flex;
         background-color: #FAF7F6;
         width: 80%;
-        margin-top: 17vh;
+        margin-top: 3vh;
         margin-bottom: 5%;
         height: 80%;
         align-self: center;
@@ -677,6 +719,15 @@
         position: fixed;
         z-index: 10000000;
       }
+
+      .oculto{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #532161;
+        width: 100%;
+        height: 20.5%;
+      }
       
       
       .logo_pequeño img{
@@ -698,10 +749,9 @@
       }
       
       .bolas img{
-        background-color: #FAF7F6;;
         width: 15px;
         margin-left: 50px;
-        background-color: #532161;
+
       }
       
       .lista_barra{
@@ -738,7 +788,7 @@
         display: flex;
         background-color: #FAF7F6;
         width: 80%;
-        margin-top: 25vh;
+        margin-top: 3vh;
         margin-bottom: 5%;
         align-self: center;
         justify-content: space-between;
@@ -807,7 +857,7 @@
       
       .contenido{
         display: flex;
-        width: 25%;
+        width: 30%;
         text-align: center;
         justify-content: center;
         
@@ -974,7 +1024,14 @@
             width: 100%;
             z-index: 10000000000;
         }
-      
+ 
+        .oculto{
+          display: flex;
+          background-color: #532161;
+          height: 17.5%;
+          width: 100%;
+      }      
+  
       
         .logo_pequeño{
           display: flex;
@@ -1004,10 +1061,8 @@
         }
         
         .bolas img{
-          background-color: #FAF7F6;;
           width: 20;
           margin-left: 20px;
-          background-color: #532161;
         }
         
       .lista_barra{
@@ -1043,7 +1098,6 @@
       }
       
       .barra_principio{
-        margin-top: 6vh;
         height: 90%;
         
       }
@@ -1063,7 +1117,7 @@
         display: flex;
         background-color: #FAF7F6;
         width: 80%;
-        margin-top: 25vh;
+        margin-top: 3vh;
         margin-bottom: 5%;
         align-self: center;
         justify-content: space-between;
@@ -1133,7 +1187,7 @@
     
     .contenido{
       display: flex;
-      width: 25%;
+      width: 30%;
       text-align: center;
       justify-content: center;
       
@@ -1301,6 +1355,14 @@
             min-height: 75px;
         }
       
+        
+        .oculto{
+          display: flex;
+          background-color: #532161;
+          height: 20%;
+          width: 100%;
+          min-height: 75px;
+      }
       
         .logo_pequeño{
           display: flex;
@@ -1330,9 +1392,7 @@
         }
         
         .bolas img{
-          background-color: #FAF7F6;;
           width: 20;
-          background-color: #532161;
         }
         
       .lista_barra{
